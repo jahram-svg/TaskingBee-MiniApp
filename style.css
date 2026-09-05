@@ -1,1 +1,350 @@
+/* =========================================
+   TASKINGBEE MINI APP
+   HOME SCREEN STYLES
+========================================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --yellow: #ffbf00;
+    --yellow-light: #fff4c9;
+    --yellow-soft: #fff9e8;
+
+    --black: #151515;
+    --dark: #202020;
+    --text: #171717;
+    --muted: #777777;
+
+    --white: #ffffff;
+    --border: #eeeeee;
+
+    --green: #18a957;
+    --purple: #8d5cf6;
+    --blue: #4285f4;
+    --red: #ff6b6b;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: var(--text);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   APP CONTAINER
+========================================= */
+
+.app {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--white);
+    padding-bottom: 95px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.top-header {
+    min-height: 82px;
+    background: var(--black);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bee-logo {
+    font-size: 38px;
+    line-height: 1;
+}
+
+.brand-text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.brand-text h1 span {
+    color: var(--yellow);
+}
+
+.brand-text p {
+    margin-top: 2px;
+    color: #bbbbbb;
+    font-size: 10px;
+}
+
+.notification-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   WELCOME SECTION
+========================================= */
+
+.welcome-section {
+    background: var(--black);
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 20px 25px;
+    gap: 12px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: var(--yellow);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    flex-shrink: 0;
+}
+
+.user-area h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.level-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #292929;
+    color: var(--yellow);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.points-mini-card {
+    min-width: 125px;
+
+    background: #242424;
+
+    border-radius: 16px;
+
+    padding: 13px 14px;
+}
+
+.points-mini-card p {
+    color: #bdbdbd;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.points-value {
+    font-size: 12px;
+}
+
+.points-value strong {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* =========================================
+   TBC BALANCE CARD
+========================================= */
+
+.tbc-card {
+    position: relative;
+
+    margin: 18px 16px 0;
+
+    min-height: 185px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd83d,
+            #ffbd00
+        );
+
+    overflow: hidden;
+
+    padding: 24px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.tbc-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: -90px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    border: 28px solid rgba(255, 255, 255, 0.13);
+}
+
+.tbc-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-label {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.tbc-content h2 {
+    font-size: 39px;
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+.tbc-content h2 span {
+    font-size: 17px;
+    letter-spacing: 0;
+}
+
+.usd-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-top: 18px;
+
+    padding: 9px 13px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.usd-value span {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.bee-character {
+    position: absolute;
+
+    right: 62px;
+    bottom: 27px;
+
+    font-size: 75px;
+
+    z-index: 2;
+}
+
+.balance-arrow {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   MINING CARD
+========================================= */
+
+.mining-card {
+    margin: 16px;
+
+    padding: 21px 18px;
+
+    border-radius: 23px;
+
+    background: var(--yellow-soft);
+
+    border: 1px solid #f3e5bb;
+}
+
+.mining-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.mining-header h3 {
+    font-size: 
